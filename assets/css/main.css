@@ -68,13 +68,15 @@ input[type="checkbox"]:hover ~ span:nth-of-type(3) {
 }
 
 /* Menu */
-.menu_text {
-  width: 139px;
+.menu {
+  width: 115px;
   height: 48px;
+  left: 1705px;
+  top: 13px;
   float: right;
-  margin-right: 3px;
-  font-size: 48px;
+  font-size: 38px;
   line-height: 72px;
+  color: #ffffff;
 }
 
 .menu_text a {
