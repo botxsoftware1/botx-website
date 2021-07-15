@@ -227,6 +227,10 @@ input[type="checkbox"]:hover ~ span:nth-of-type(3) {
   vertical-align: middle;
 }
 
+.fa, .fab, .fad, .fal, .far, .fas{
+  line-height: 0;
+}
+
 .privacyTerms {
   display: inline-flex;
   font-size: 14px;
