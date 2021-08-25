@@ -25,7 +25,7 @@ a:hover {
   padding-right: 0;
 }
 
-label {
+.vector label {
   display: flex;
   flex-direction: column;
   width: 44px;
@@ -35,7 +35,7 @@ label {
   margin-right: 20px;
 }
 
-label span {
+.vector label span {
   background: #fff;
   border-radius: 5px;
   height: 5px;
@@ -55,19 +55,19 @@ span:nth-of-type(3) {
   width: 70%;
 }
 
-input[type="checkbox"] {
+.vector input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]:hover ~ span:nth-of-type(1) {
+.vector input[type="checkbox"]:hover ~ span:nth-of-type(1) {
   width: 70%;
 }
 
-input[type="checkbox"]:hover ~ span:nth-of-type(2) {
+.vector input[type="checkbox"]:hover ~ span:nth-of-type(2) {
   width: 50%;
 }
 
-input[type="checkbox"]:hover ~ span:nth-of-type(3) {
+.vector input[type="checkbox"]:hover ~ span:nth-of-type(3) {
   width: 100%;
 }
 
@@ -116,10 +116,14 @@ input[type="checkbox"]:hover ~ span:nth-of-type(3) {
   color: #ffffff;
 }
 
-.botx_text p{
+.botx_text p {
   margin-bottom: 0;
 }
 
+.wrapper {
+  position: absolute;
+  z-index: 999;
+}
 /* Sidebar */
 .sidebar {
   width: 340px;
@@ -160,7 +164,7 @@ input[type="checkbox"]:hover ~ span:nth-of-type(3) {
 
 .menu-elements li:hover {
   font-size: 35px;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   text-decoration: none;
 }
 
@@ -177,13 +181,13 @@ input[type="checkbox"]:hover ~ span:nth-of-type(3) {
 
 .newsletter:hover {
   font-size: 17px;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   text-decoration: none;
 }
 
 .content {
-    width: 100%;
-    transition: all 0.3s;
+  width: 100%;
+  transition: all 0.3s;
 }
 
 .dismiss {
@@ -193,7 +197,7 @@ input[type="checkbox"]:hover ~ span:nth-of-type(3) {
   position: absolute;
   top: 10px;
   right: 10px;
-  transition: all .3s;
+  transition: all 0.3s;
   border-radius: 4px;
   text-align: center;
   line-height: 35px;
@@ -202,7 +206,7 @@ input[type="checkbox"]:hover ~ span:nth-of-type(3) {
 
 .dismiss a:hover,
 .dismiss a:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .socialMedia {
@@ -227,7 +231,12 @@ input[type="checkbox"]:hover ~ span:nth-of-type(3) {
   vertical-align: middle;
 }
 
-.fa, .fab, .fad, .fal, .far, .fas{
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
   line-height: 0;
 }
 
@@ -247,4 +256,184 @@ input[type="checkbox"]:hover ~ span:nth-of-type(3) {
 
 .contacts img {
   transform: scale(0.8);
+}
+
+/* ================================================================ Hiring Page =========================================================== */
+
+.hire {
+  color: #00c908;
+}
+
+#login-box input:focus,
+#login-box select:focus {
+  outline: none;
+}
+
+#login-box {
+  position: relative;
+  padding: 15px;
+  /* margin: 5% auto; */
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+#login-box input[type="text"],
+#login-box input[type="email"],
+#login-box input[type="number"],
+#login-box select,
+#login-box input[type="file"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 4px;
+  width: 250px;
+  height: 32px;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+  background-color: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#login-box input[type="number"]::-webkit-outer-spin-button,
+#login-box input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#login-box input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#login-box input[type="email"],
+#login-box input[type="number"],
+#login-box select,
+#login-box input[type="file"] {
+  width: 100%;
+}
+
+#login-box input[type="text"]::placeholder,
+#login-box input[type="email"]::placeholder,
+#login-box input[type="number"]::placeholder,
+#login-box select::placeholder,
+#login-box input[type="file"]::placeholder {
+  color: #fff;
+}
+
+#login-box select option{
+  color: #000000;
+  border-radius: 10px;
+  /* background-color: #00C908; */
+  opacity: 0.5;
+}
+
+/* 
+#login-box input[type="text"]:focus,
+#login-box input[type="email"]:focus,
+#login-box input[type="number"]:focus,
+#login-box select:focus,
+#login-box input[type="file"]:focus {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  transition: 0.2s ease;
+} */
+
+
+.btn-success {
+  background-color: #05a60c;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  font-size: 25px;
+  opacity: 0.8;
+}
+
+/* ================================================================ Say Something =========================================================== */
+
+.logo_img {
+  margin-left: 70px;
+}
+
+.say_position {
+  margin-left: 90px;
+  color: white;
+}
+
+.say_position h1 {
+  font-weight: 600;
+  font-size: 76px;
+}
+
+.say_span {
+  color: #fca600;
+}
+
+.say_position p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.name,
+.mail_style,
+.text_area {
+  color: #ffffff;
+  height: 35px;
+  background: linear-gradient(
+      180deg,
+      rgba(235, 235, 224, 0.1) 0%,
+      rgba(245, 245, 240, 0) 100%
+    ),
+    rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: #ffffff solid 1px;
+  width: 120%;
+}
+
+.text_area {
+  height: 60px;
+}
+
+.form-check {
+  margin-top: 20px;
+}
+
+.form-check .form-check-label {
+  vertical-align: top;
+  margin: 0;
+}
+
+#checkboxNews {
+  height: 18px;
+  width: 18px;
+  margin: 0;
+}
+
+.btn-warning {
+  text-align: center;
+  background-color: #fca600;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 50%;
+  height: 50px;
+  font-size: 25px;
+  opacity: 0.8;
 }
