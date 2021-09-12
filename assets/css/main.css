@@ -1,11 +1,11 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap'); */
+
 body {
   font-family: Poppins;
   font-style: normal;
   font-weight: 300;
-}
-
-a:hover {
-  text-decoration: none;
+  background-color: #000000;
+  /* height: auto; */
 }
 
 /* vanta globe */
@@ -13,16 +13,19 @@ a:hover {
   width: 100%;
   height: 100vh;
 }
-
+body{
+  height: auto;
+}
+/* ............................................top-navbar........................................ */
 /* logo */
-.logo_img {
-  width: 70%;
-  height: 100%;
+.img-responsive {
+  margin-top: 20px;
   opacity: 0.89;
 }
 
 .vector {
   padding-right: 0;
+  margin-top: 10px;
 }
 
 .vector label {
@@ -31,8 +34,7 @@ a:hover {
   width: 44px;
   cursor: pointer;
   float: right;
-  padding-top: 21px;
-  margin-right: 20px;
+  margin: 21px 10px 0 10px;
 }
 
 .vector label span {
@@ -73,10 +75,8 @@ span:nth-of-type(3) {
 
 /* Menu */
 .menu_text {
-  width: 115px;
-  height: 48px;
   float: right;
-  font-size: 38px;
+  font-size: 2.5vw;
   line-height: 72px;
 }
 
@@ -85,45 +85,12 @@ span:nth-of-type(3) {
   text-decoration: none;
 }
 
-.top {
-  margin: 0;
-  padding: 0;
-  top: 110px;
-}
-
-/* We are BOTX */
-.botx_header {
-  font-size: 96px;
-  width: 60%;
-  color: #ffffff;
-  text-align: center;
-  padding: 0;
-  left: 100px;
-}
-
-.span {
-  color: #008ecb;
-}
-
-.botx_text {
-  font-size: 24px;
-  font-weight: 500;
-  left: 100px;
-  width: 60%;
-  text-align: justify;
-  padding: 0 50px 0 55px;
-  line-height: 40px;
-  color: #ffffff;
-}
-
-.botx_text p {
-  margin-bottom: 0;
-}
-
+/* ............................................side-navbar........................................ */
 .wrapper {
   position: absolute;
   z-index: 999;
 }
+
 /* Sidebar */
 .sidebar {
   width: 340px;
@@ -149,6 +116,10 @@ span:nth-of-type(3) {
 
 .sidebar.active {
   right: 0px;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .menu-elements {
@@ -258,10 +229,58 @@ span:nth-of-type(3) {
   transform: scale(0.8);
 }
 
-/* ================================================================ Hiring Page =========================================================== */
+/* ............................................homepage........................................ */
+.content_main {
+  margin: 150px 0 0 130px;
+}
+
+/* We are BOTX */
+.botx_header {
+  font-size: 6vw;
+  color: #ffffff;
+  text-align: left;
+}
+
+.bot {
+  color: #008ecb;
+}
+
+.botx_text {
+  font-size: 2vw;
+  font-weight: lighter;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.botx_text p {
+  padding-right: 70px;
+  line-height: 40px;
+}
+
+/* ............................................hiring page........................................ */
+.hire_position {
+  margin: 60px 0 0 90px;
+  color: white;
+}
+
+.hire_position h1 {
+  font-weight: 600;
+  font-size: 76px;
+}
+
+.hire_position p {
+  margin-top: 20px;
+  font-size: 18px;
+  /* line-height: 30px; */
+}
 
 .hire {
   color: #00c908;
+}
+
+.form1 {
+  margin-top: 30px;
+  padding: 0;
 }
 
 #login-box input:focus,
@@ -272,7 +291,7 @@ span:nth-of-type(3) {
 #login-box {
   position: relative;
   padding: 15px;
-  /* margin: 5% auto; */
+  /* margin: 50px auto; */
   width: 380px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -332,24 +351,12 @@ span:nth-of-type(3) {
   color: #fff;
 }
 
-#login-box select option{
+#login-box select option {
   color: #000000;
   border-radius: 10px;
   /* background-color: #00C908; */
   opacity: 0.5;
 }
-
-/* 
-#login-box input[type="text"]:focus,
-#login-box input[type="email"]:focus,
-#login-box input[type="number"]:focus,
-#login-box select:focus,
-#login-box input[type="file"]:focus {
-  border-bottom: 2px solid #fff;
-  color: #fff;
-  transition: 0.2s ease;
-} */
-
 
 .btn-success {
   background-color: #05a60c;
@@ -361,14 +368,14 @@ span:nth-of-type(3) {
   opacity: 0.8;
 }
 
-/* ================================================================ Say Something =========================================================== */
-
-.logo_img {
-  margin-left: 70px;
+.but_btn {
+  margin-left: 17px;
+  padding: 0;
 }
 
+/* ............................................say something page........................................ */
 .say_position {
-  margin-left: 90px;
+  margin: 55px 0 0 90px;
   color: white;
 }
 
@@ -388,7 +395,7 @@ span:nth-of-type(3) {
 }
 
 .form {
-  margin-top: 30px;
+  margin: 20px 0 0 0;
 }
 
 .name,
@@ -408,12 +415,8 @@ span:nth-of-type(3) {
   width: 120%;
 }
 
-.text_area {
-  height: 60px;
-}
-
 .form-check {
-  margin-top: 20px;
+  margin: 20px 0 0 -13px;
 }
 
 .form-check .form-check-label {
@@ -432,8 +435,177 @@ span:nth-of-type(3) {
   background-color: #fca600;
   border-radius: 10px;
   margin-top: 20px;
-  width: 50%;
+  width: 10%;
   height: 50px;
   font-size: 25px;
   opacity: 0.8;
+}
+
+/* ================================================= media queries ====================================== */
+/* ............................................homepage........................................ */
+@media screen and (max-width: 768px) {
+  .img-responsive {
+    width: 125px;
+  }
+  .menu_text {
+    font-size: 5vw;
+  }
+  .content_main {
+    margin: 123px 0 0 79px;
+  }
+  .botx_header {
+    font-size: 70px;
+    text-align: left;
+  }
+  .botx_text {
+    font-size: 15px;
+    padding: 0 90px 0 0;
+  }
+  .botx_text p {
+    padding-right: 0px;
+  }
+  .adjust {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .row-responsive {
+    margin-bottom: 470px;
+  }
+  .content_main {
+    margin: 100px 0 0 10px;
+  }
+  .menu_text {
+    /* font-size: 24px; */
+    line-height: 65px;
+    font-size: 7vw;
+  }
+
+  .vector label {
+    margin: 21px 0px 0 10px;
+  }
+
+  .vector label span {
+    height: 4px;
+    margin: 2px 0;
+  }
+
+  span:nth-of-type(1) {
+    width: 40%;
+  }
+
+  span:nth-of-type(2) {
+    width: 70%;
+  }
+
+  span:nth-of-type(3) {
+    width: 55%;
+  }
+  .botx_header {
+    font-size: 13vw;
+    /* text-align: center; */
+  }
+  .botx_text {
+    padding-right: 0px;
+  }
+}
+
+/* ............................................hiringpage........................................ */
+@media screen and (width: 768px) {
+  .img-responsive {
+    width: 125px;
+  }
+  .hire_position {
+    margin: 0 0 0 82px;
+    position: fixed;
+  }
+  .hire_adjust {
+    margin: 75px 0 0 0;
+  }
+  .hire_adjust h1 {
+    font-size: 63px;
+  }
+  .hire_adjust p {
+    padding-right: 210px;
+    margin: 10px 0 0 0;
+  }
+  .btn-success {
+    width: 135px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .hire_position {
+    margin: 590px 0 0 10px;
+    /* padding: 75px 0 0 0; */
+  }
+  .hire_position h1 {
+    font-size: 13vw;
+  }
+  #login-box {
+    width: 323px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form_box {
+    padding-left: 10px;
+  }
+  #login-box {
+    width: 280px;
+  }
+}
+
+/* ............................................say something page........................................ */
+
+@media screen and (max-width: 768px) {
+  .say_position {
+    margin: 40px 0 0 50px;
+  }
+  .say_position h1 {
+    font-size: 8vw;
+  }
+  .say_position p {
+    font-size: 2vw;
+    line-height: 24px;
+  }
+  .say_form .form-group {
+    width: 280px;
+  }
+  .btn-warning {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .say_position {
+    padding: 100px 0 0 0;
+    margin: 0;
+  }
+  .say_position h1 {
+    font-size: 12vw;
+  }
+  .say_position p {
+    font-size: 3vw;
+  }
+  .say_form .form-group {
+    width: 270px;
+  }
+  .btn-warning {
+    width: 120px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .say_position p {
+    font-size: 4vw;
+  }
+  .say_form .form-group {
+    width: 240px;
+  }
+  .form-check label {
+    display: inline;
+  }
 }
