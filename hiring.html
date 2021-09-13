@@ -113,22 +113,22 @@
             </div>
             <div class="row form1">
                 <div class="col col-md-3 form_box">
-                    <form action="" class="form-horizontal form-hor">
+                    <form id="hiringform" action="" class="form-horizontal form-hor">
                         <div id="login-box">
-                            <input type="text" name="username" placeholder="Name" />
-                            <input type="email" name="email" placeholder="Email" />
-                            <input type="number" name="" placeholder="Phone" />
-                            <select id="" name="" placeholder="Job title">
+                            <input type="text" name="Name" placeholder="Name" />
+                            <input type="email" name="Email" placeholder="Email" />
+                            <input type="number" maxlength="10" name="Phone" placeholder="Phone" />
+                            <select type="text" id="" name="Job" placeholder="Job title">
                                 <option value="" disabled selected hidden>Job title</option>
-                                <option value="">web developer</option>
-                                <option value="">front end web developer</option>
-                                <option value="">web developer</option>
+                                <option value="Android Developer">Android Developer</option>
+                                <option value="Web Developer">Web Developer</option>
+                                <option value="Software Developer">Software Developer</option>
                             </select>
-                            <input type="file" name="" placeholder="Attach Your resume in pdf format" />
+                            <!--<input type="file" name="" placeholder="Attach Your resume in pdf format" />-->
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10 but_btn">
-                                <button type="submit" class="btn btn-success">Send</button>
+                                <button type="submit" value="Submit" class="btn btn-success">Send</button>
                             </div>
                         </div>
                     </form>
@@ -164,6 +164,25 @@
             size: 1.2,
         })
     </script>
+
+    <!--Form submit AJAX starts here-->
+    <script>
+        $("#hiringform").submit((e) => {
+            e.preventDefault()
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbwh6b_UK4ZwFA0ObZHFNJBckjZdYrir5WZnfveUp0bNMwPl2rg/exec",
+                data: $("#hiringform").serialize(),
+                method: "post",
+                success: function (response) {
+                    alert("Succesfully submitted")
+                },
+                error: function (err) {
+                    alert("Something Error")
+                }
+            })
+        })
+    </script>
+    <!--Form submit AJAX ends here-->
 
 </body>
 

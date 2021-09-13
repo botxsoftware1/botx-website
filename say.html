@@ -114,28 +114,28 @@
                     </p>
                 </div>
             </div>
-            <form action="" class="form-horizontal">
+            <form class="form-horizontal" id="sayform" action="">
                 <div class="row form">
                     <div class="col col-md-3 say_form">
                         <div class="form-group">
-                            <input type="text" class="form-control name" placeholder="Name">
+                            <input type="text" name="Name" class="form-control name" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control mail_style" name="" id="" placeholder="Email">
+                            <input type="email" name="Email" class="form-control mail_style" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control text_area" name="" id="" cols="47" rows="4"
+                            <textarea class="form-control text_area" name="Message" cols="47" rows="4"
                                 placeholder="Message"></textarea>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkboxNews">
+                            <input class="form-check-input" name="Checkbox" type="checkbox" value="agreed" id="checkboxNews">
                             <label class="form-check-label" for="flexCheckDefault">
                                 &nbsp I agree to receive the updates and news
                             </label>
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-warning">Send</button>
+                <button type="submit" value="Submit" class="btn btn-warning">Send</button>
             </form>
         </div>
 
@@ -169,6 +169,24 @@
         })
     </script>
 
+    <!--Form submit AJAX starts here-->
+    <script>
+        $("#sayform").submit((e) => {
+            e.preventDefault()
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbyEl9WqXTYW_N-7Tgml8xuHeIjdWb8rEnyyd5GJDOByU2MABCP9/exec",
+                data: $("#sayform").serialize(),
+                method: "post",
+                success: function (response) {
+                    alert("Succesfully submitted")
+                },
+                error: function (err) {
+                    alert("Something Error")
+                }
+            })
+        })
+    </script>
+    <!--Form submit AJAX ends here-->
 </body>
 
 </html>
