@@ -49,13 +49,3 @@
                 verification_text.innerHTML = "<p>Wrong Certification ID, please recheck if the ID is valid or not.</p>";
             }
         });
-
-//--------------------Button JS---------------------------------------------------------//
-
-        $("#verifybutton").on("click" , function(){
-            setTimeout(()=>{
-            $(".modal-backdrop").remove(".modal-backdrop");},500)
-            setTimeout(()=>{
-            $(".modal-content").css("width", "100%");
-            $(".modal-content").css("height", "300px");},100)
-          });

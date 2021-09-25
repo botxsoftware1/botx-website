@@ -11,9 +11,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -25,11 +28,40 @@
 
   <div class="container-fluid">
 
+    <!-- Newsletter-->
+
+    <div id="newsletterModal" class="modal fade">
+      <div class="modal-dialog modal-newsletter">
+        <div class="modal-content">
+          <form id="newsletter" action="">
+            <div class="modal-header">
+              <div class="icon-box">
+                <i class="fa fa-envelope-open-o"></i>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
+            </div>
+            <div class="modal-body text-center">
+              <h4>Subscribe to our newsletter</h4>
+              <p>Join our subscribers list to get the latest news, updates and special offers delivered
+                directly in your inbox.</p>
+              <div class="input-group">
+                <input type="email" name="_replyto" class="form-control" placeholder="Enter your email" required>
+                <span class="input-group-btn">
+                  <input type="submit" class="btn btn-primary" value="Subscribe">
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- ...................................... top-navbar ......................................... -->
 
     <div class="row row-responsive align-items-start">
       <div class="col col-md-4 col-sm-4 col-xs-4">
-        <a href="index.html"><img src="assets/images/logo.png" alt="Botx_Logo" class="img-responsive" width="150px" height="150px" /></a>
+        <a href="index.html"><img src="assets/images/logo.png" alt="Botx_Logo" class="img-responsive" width="150px"
+            height="150px" /></a>
       </div>
       <div class="col col-md-8 col-sm-8 col-xs-8 vector">
         <label for="check">
@@ -80,7 +112,7 @@
         </div>
 
         <div class="newsletter">
-          <a class="" href="#">Subscribe to Newsletter</a>
+          <a href="#" data-toggle="modal" data-target="#newsletterModal">Subscribe to Newsletter</a>
         </div>
 
         <div class="socialMedia">
@@ -115,7 +147,8 @@
             <p class="h3">Technology is advancing faster and taking less time to be widely
               adopted than ever before. Things evolve, we humans accept it and move on. It’s time to run with the
               changing world.<br />
-              <b>It’s time <span class="bot typing"></span></b></p>
+              <b>It’s time <span class="bot typing"></span></b>
+            </p>
           </div>
         </div>
       </div>
