@@ -15,7 +15,8 @@
 
         var verificationbutton = document.getElementById("verifybutton");
         var downloadbtn = document.getElementById("downloadbtn");
-        var download = "https://www.google.com/";
+        var download = "";
+        var nameofemp = "";
 
         verificationbutton.addEventListener("click", function() {
 
@@ -28,14 +29,15 @@
             var textinput = document.getElementById("inputcertnum");
             var textinputvalue = document.getElementById("inputcertnum").value;
 
-            // Sample Certificate number = BOTXIN21HR01
-            if (textinputvalue.length == 12 && textinputvalue.substring(0, 4) == "BOTX") {
+            // Sample Certificate number = BOTXINT21HR01
+            if (textinputvalue.length == 12 || 13 && textinputvalue.substring(0, 4) == "BOTX") {
                 var db = firebase.database().ref();
                 db.once("value", (snapshot) => {
                     download = snapshot.child(textinputvalue).child("Link").val();
+                    nameofemp = snapshot.child(textinputvalue).child("Name").val();
                     if (download != null) {
                         var verification_text = document.getElementById("output_message");
-                        verification_text.innerHTML = "<p>Your Certificate ID is verified!</p>";
+                        verification_text.innerHTML = "<p>Name of Employee : </p>"+ nameofemp;
                         downloadbtn.style.display = "inline";
                     }
                     else {

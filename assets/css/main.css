@@ -541,8 +541,8 @@ a:hover {
 .modal-newsletter .close {
   background: #c0c3c8;
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: -50px;
+  right: -52px;
   color: #fff;
   text-shadow: none;
   opacity: 0.5;
@@ -553,7 +553,6 @@ a:hover {
 }
 .modal-newsletter .close span {
   position: relative;
-  top: -1px;
 }
 .modal-newsletter .close:hover {
   opacity: 0.8;
@@ -827,3 +826,25 @@ a:hover {
   }
 }
 
+/*------------NewsLetter-------------------*/
+@media screen and (max-width: 575.98px) {
+  .modal-newsletter .btn{
+    min-width: 100px;
+  }
+  .input-group .form-control {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .modal-body{
+    padding: 0px;
+  }
+  .modal-newsletter .btn{
+    min-width: 75px;
+    padding: 0px 4px;
+  }
+  .input-group .form-control {
+    width: 130px;
+  }
+}
