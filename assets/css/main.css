@@ -13,9 +13,11 @@ body {
   width: 100%;
   height: 100vh;
 }
-body{
+
+body {
   height: auto;
 }
+
 /* ............................................top-navbar........................................ */
 /* logo */
 .img-responsive {
@@ -61,15 +63,15 @@ span:nth-of-type(3) {
   display: none;
 }
 
-.vector input[type="checkbox"]:hover ~ span:nth-of-type(1) {
+.vector input[type="checkbox"]:hover~span:nth-of-type(1) {
   width: 70%;
 }
 
-.vector input[type="checkbox"]:hover ~ span:nth-of-type(2) {
+.vector input[type="checkbox"]:hover~span:nth-of-type(2) {
   width: 50%;
 }
 
-.vector input[type="checkbox"]:hover ~ span:nth-of-type(3) {
+.vector input[type="checkbox"]:hover~span:nth-of-type(3) {
   width: 100%;
 }
 
@@ -144,7 +146,7 @@ a:hover {
   margin-bottom: 12%;
 }
 
-.certificateverify{
+.certificateverify {
   font-size: 15px;
   height: 26px;
 }
@@ -268,6 +270,79 @@ a:hover {
   line-height: 40px;
 }
 
+/* ............................................about page........................................ */
+
+.topup {
+  margin-top: 100px;
+}
+
+.about_header {
+  font-size: 2vw;
+  padding: 0;
+  color: #ffffff;
+  left: 110px;
+}
+
+.about_header b {
+  font-size: 4vw;
+}
+
+.about_text {
+  font-size: 19px;
+  color: #ffffff;
+}
+
+.span_colorA {
+  color: #8E8E8E;
+}
+
+#cntSlider {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  background-color: transparent;
+  position: absolute;
+  left: 125px;
+  width: 300px;
+  padding: 0;
+  height: 650px;
+  margin-top: 20px;
+}
+
+#cntSlider::-webkit-scrollbar {
+  display: none;
+}
+
+#cntSlider .box {
+  width: 650px;
+  height: 300px;
+  margin-top: 453px;
+  color: #FFF;
+  background-color: transparent;
+  display: inline-block;
+  white-space: pre-wrap;
+  position: relative;
+}
+
+#cntSlider .box h3 {
+  font-size: 3vw;
+  padding-top: 30px;
+}
+
+#cntSlider .box p {
+  font-size: 19px;
+}
+
+#cntSlider2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+/* ............................................................................................... */
+
 /* ............................................hiring page........................................ */
 .hire_position {
   margin: 60px 0 0 90px;
@@ -306,11 +381,9 @@ a:hover {
   width: 380px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
+      rgba(255, 255, 255, 0) 100%),
     rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(2px);
 }
@@ -414,11 +487,9 @@ a:hover {
 .text_area {
   color: #ffffff;
   height: 35px;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(235, 235, 224, 0.1) 0%,
-      rgba(245, 245, 240, 0) 100%
-    ),
+      rgba(245, 245, 240, 0) 100%),
     rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(1px);
   border-radius: 10px;
@@ -477,14 +548,12 @@ a:hover {
   margin: 20px 0 0 0;
 }
 
-.certnum{
+.certnum {
   color: #ffffff;
   height: 35px;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(235, 235, 224, 0.1) 0%,
-      rgba(245, 245, 240, 0) 100%
-    ),
+      rgba(245, 245, 240, 0) 100%),
     rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(1px);
   border-radius: 10px;
@@ -504,31 +573,34 @@ a:hover {
   opacity: 0.8;
 }
 
-.btn-verify:hover{
+.btn-verify:hover {
   background-color: #FF2E2E;
 }
 
 /* Newsletter */
 
-.modal-backdrop{
+.modal-backdrop {
   z-index: 0;
 }
 
-.modal-newsletter {	
+.modal-newsletter {
   color: #999;
   font-size: 15px;
 }
+
 .modal-newsletter .modal-content {
   padding: 70px;
-  border-radius: 0;		
+  border-radius: 0;
   border: none;
 }
+
 .modal-newsletter .modal-header {
-  border-bottom: none;   
-      position: relative;
+  border-bottom: none;
+  position: relative;
   text-align: center;
   border-radius: 5px 5px 0 0;
 }
+
 .modal-newsletter h4 {
   color: #000;
   font-family: 'Varela Round', sans-serif;
@@ -538,6 +610,7 @@ a:hover {
   font-weight: bold;
   text-transform: capitalize;
 }
+
 .modal-newsletter .close {
   background: #c0c3c8;
   position: absolute;
@@ -551,54 +624,67 @@ a:hover {
   border-radius: 20px;
   font-size: 16px;
 }
+
 .modal-newsletter .close span {
   position: relative;
 }
+
 .modal-newsletter .close:hover {
   opacity: 0.8;
 }
+
 .modal-newsletter .icon-box {
-  color: #7265ea;		
+  color: #7265ea;
   display: inline-block;
   z-index: 9;
   text-align: center;
   position: relative;
   margin-bottom: 5px;
 }
+
 .modal-newsletter .icon-box i {
   font-size: 110px;
 }
-.modal-newsletter .form-control, .modal-newsletter .btn {
+
+.modal-newsletter .form-control,
+.modal-newsletter .btn {
   min-height: 46px;
-  border-radius: 3px; 
+  border-radius: 3px;
 }
+
 .modal-newsletter .form-control {
   box-shadow: none;
   border-color: #dbdbdb;
 }
+
 .modal-newsletter .form-control:focus {
   border-color: #7265ea;
   box-shadow: 0 0 8px rgba(114, 101, 234, 0.5);
 }
-  .modal-newsletter .btn {
-      color: #fff;
-      border-radius: 4px;
+
+.modal-newsletter .btn {
+  color: #fff;
+  border-radius: 4px;
   background: #7265ea;
   text-decoration: none;
   transition: all 0.4s;
-      line-height: normal;
+  line-height: normal;
   padding: 6px 20px;
   min-width: 150px;
-      border: none;
-  }
-.modal-newsletter .btn:hover, .modal-newsletter .btn:focus {
+  border: none;
+}
+
+.modal-newsletter .btn:hover,
+.modal-newsletter .btn:focus {
   background: #4e3de4;
   outline: none;
 }
+
 .modal-newsletter .input-group {
   margin: 30px 0 15px;
   font-family: 'Varela Round', sans-serif;
 }
+
 .hint-text {
   margin: 100px auto;
   text-align: center;
@@ -610,23 +696,29 @@ a:hover {
   .img-responsive {
     width: 125px;
   }
+
   .menu_text {
     font-size: 5vw;
   }
+
   .content_main {
     margin: 123px 0 0 79px;
   }
+
   .botx_header {
     font-size: 70px;
     text-align: left;
   }
+
   .botx_text {
     font-size: 15px;
     padding: 0 90px 0 0;
   }
+
   .botx_text p {
     padding-right: 0px;
   }
+
   .adjust {
     padding-left: 0px;
   }
@@ -636,9 +728,11 @@ a:hover {
   .row-responsive {
     margin-bottom: 470px;
   }
+
   .content_main {
     margin: 100px 0 0 10px;
   }
+
   .menu_text {
     /* font-size: 24px; */
     line-height: 65px;
@@ -665,10 +759,12 @@ a:hover {
   span:nth-of-type(3) {
     width: 55%;
   }
+
   .botx_header {
     font-size: 13vw;
     /* text-align: center; */
   }
+
   .botx_text {
     padding-right: 0px;
   }
@@ -679,20 +775,25 @@ a:hover {
   .img-responsive {
     width: 125px;
   }
+
   .hire_position {
     margin: 0 0 0 82px;
     position: fixed;
   }
+
   .hire_adjust {
     margin: 75px 0 0 0;
   }
+
   .hire_adjust h1 {
     font-size: 63px;
   }
+
   .hire_adjust p {
     padding-right: 210px;
     margin: 10px 0 0 0;
   }
+
   .btn-success {
     width: 135px;
   }
@@ -703,9 +804,11 @@ a:hover {
     margin: 590px 0 0 10px;
     /* padding: 75px 0 0 0; */
   }
+
   .hire_position h1 {
     font-size: 13vw;
   }
+
   #login-box {
     width: 323px;
   }
@@ -715,10 +818,87 @@ a:hover {
   .form_box {
     padding-left: 10px;
   }
+
   #login-box {
     width: 280px;
   }
 }
+
+/* ............................................about us page........................................ */
+
+@media screen and (max-width:768px) {
+
+  .about_header {
+    left: 80px;
+    margin-top: 50px;
+  }
+
+  .about_header b {
+    font-size: 8vw;
+  }
+
+  #cntSlider {
+    left: 90px;
+    width: 220px;
+    height: 50vw;
+    margin-top: 0;
+  }
+
+  #cntSlider .box {
+    width: 400px;
+    height: 200px;
+  }
+
+  #cntSlider .box h3 {
+    font-size: 4vw;
+    line-height: 40px;
+    padding-top: 30px;
+  }
+
+}
+
+@media screen and (max-width:575.98px) {
+
+  .topup {
+    top: 600px;
+  }
+
+  .about_header {
+    left: 0px;
+    margin-top: 130px;
+  }
+
+  .about_header b {
+    font-size: 20vw;
+  }
+
+  #cntSlider {
+    left: 10px;
+    width: 220px;
+    height: 90vw;
+    margin-top: 0;
+  }
+
+  #cntSlider .box {
+    width: 90vw;
+    padding-left: 10px;
+  }
+
+  #cntSlider .box h3 {
+    font-size: 8vw;
+    line-height: 40px;
+    padding-top: 30px;
+  }
+
+  #cntSlider .box p {
+    font-size: 19px;
+    padding: 0 10px 0 0;
+    text-align: justify;
+  }
+
+}
+
+/* ..................................................................................................... */
 
 /* ............................................say something page........................................ */
 
@@ -726,17 +906,22 @@ a:hover {
   .say_position {
     margin: 40px 0 0 50px;
   }
+
   .say_position h1 {
     font-size: 8vw;
   }
+
   .say_position p {
     font-size: 2vw;
     line-height: 24px;
   }
+
   .say_form .form-group {
     width: 280px;
   }
-  .btn-warning,.btn-warning1 {
+
+  .btn-warning,
+  .btn-warning1 {
     width: 20%;
   }
 }
@@ -746,16 +931,21 @@ a:hover {
     padding: 100px 0 0 0;
     margin: 0;
   }
+
   .say_position h1 {
     font-size: 12vw;
   }
+
   .say_position p {
     font-size: 3vw;
   }
+
   .say_form .form-group {
     width: 270px;
   }
-  .btn-warning,.btn-warning1 {
+
+  .btn-warning,
+  .btn-warning1 {
     width: 120px;
     margin-bottom: 50px;
   }
@@ -765,30 +955,36 @@ a:hover {
   .say_position p {
     font-size: 4vw;
   }
+
   .say_form .form-group {
     width: 240px;
   }
+
   .form-check label {
     display: inline;
   }
 }
 
-/* ............................................cert something page........................................ */
+/* ............................................certificate page........................................ */
 
 @media screen and (max-width: 768px) {
   .cert_position {
     margin: 40px 0 0 50px;
   }
+
   .cert_position h1 {
     font-size: 8vw;
   }
+
   .cert_position p {
     font-size: 2vw;
     line-height: 24px;
   }
+
   .cert_form .form-group {
     width: 280px;
   }
+
   .btn-verify {
     width: 20%;
   }
@@ -799,15 +995,19 @@ a:hover {
     padding: 100px 0 0 0;
     margin: 0;
   }
+
   .cert_position h1 {
     font-size: 12vw;
   }
+
   .cert_position p {
     font-size: 3vw;
   }
+
   .cert_form .form-group {
     width: 270px;
   }
+
   .btn-verify {
     width: 120px;
     margin-bottom: 50px;
@@ -818,9 +1018,11 @@ a:hover {
   .cert_position p {
     font-size: 4vw;
   }
+
   .cert_form .form-group {
     width: 240px;
   }
+
   .form-check label {
     display: inline;
   }
@@ -828,22 +1030,25 @@ a:hover {
 
 /*------------NewsLetter-------------------*/
 @media screen and (max-width: 575.98px) {
-  .modal-newsletter .btn{
+  .modal-newsletter .btn {
     min-width: 100px;
   }
+
   .input-group .form-control {
     width: 130px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .modal-body{
+  .modal-body {
     padding: 0px;
   }
-  .modal-newsletter .btn{
+
+  .modal-newsletter .btn {
     min-width: 75px;
     padding: 0px 4px;
   }
+
   .input-group .form-control {
     width: 130px;
   }
